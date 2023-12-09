@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Yeon Woo Website</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;400;700&display=swap");
+    body {
+      background-image: url("seo-2394237_1280.jpg");
+    }
+    header {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 800%;
+      position: relative;
+      top: 0px;
+      text-align: center;
+    }
+    header > h6 {
+      font-family: "Gaegu", sans-serif;
+      font-weight: 400;
+      margin: -30px;
+      text-align: center;
+      position: relative;
+      left: 250px;
+    }
+    h1 {
+      position: absolute;
+      left: 100px;
+    }
+    p {
+      text-align: center;
+      position: relative;
+      top: 70px;
+      font-family: "Gaegu", sans-serif;
+      font-weight: 900;
+      font-size: 570%;
+    }
+
+    img[src="Kim Hyeon Jun.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Han Gun hee.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Woo Na Young.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Park Shin Hye.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Park Zoo Young.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Park Seon Jeong.jpg"] {
+      border-radius: 50%;
+    }
+    img[src="Yee Jung Ha.jpg"] {
+      border-radius: 50%;
+    }
+    aside {
+      position: absolute;
+      top: 150px;
+      left: 1260px;
+    }
+    img[src="free-icon-instagram-logo-1384886.jpg"] {
+      border-radius: 15px;
+    }
+    img[src="github.jpg"] {
+      border-radius: 100px;
+    }
+  </style>
+  <body>
+    <div
+      class="w3-sidebar w3-bar-block"
+      style="display: none; z-index: 5"
+      id="mySidebar"
+    >
+      <button class="w3-bar-item w3-button w3-xxlarge" onclick="w3_close()">
+        Close &times;
+      </button>
+      <a
+        href="https://gogumahotteok.github.io/profile/"
+        class="w3-bar-item w3-button"
+        >Home</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile1/"
+        class="w3-bar-item w3-button"
+        >About me</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile2/"
+        class="w3-bar-item w3-button"
+        >my friends</a
+      >
+      <a
+        href="https://gogumahotteok.github.io/profile3/"
+        class="w3-bar-item w3-button"
+        >Python Storage</a
+      >
+    </div>
+
+    <div
+      class="w3-overlay"
+      onclick="w3_close()"
+      style="cursor: pointer"
+      id="myOverlay"
+    ></div>
+
+    <div>
+      <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">
+        &#9776;
+      </button>
+      <div class="w3-container">
+        <h1>
+          <br /><br /><br /><br /><br />
+          <img src="Kim Hyeon Jun.jpg" /><br /><br />
+          <img src="Han Gun hee.jpg" /><br /><br />
+          <img src="Woo Na Young.jpg" /><br /><br />
+          <img src="Park Shin Hye.jpg" /><br /><br />
+          <img src="Park Zoo Young.jpg" /><br /><br />
+          <img src="Park Seon Jeong.jpg" /><br /><br />
+          <img src="Yee Jung Ha.jpg" /><br /><br />
+        </h1>
+        <header>
+          My Friends!!
+          <h6>click the name!!</h6>
+        </header>
+
+        <p>
+          <a href="https://202310055hj.github.io" target="blank"
+            >Kim Hyeon Jun</a
+          ><br /><br />
+          <a href="https://nono.github.io" target="blank">Han Gun hee</a
+          ><br /><br />
+          <a href="https://nayeong2da.github.io/profile/" target="blank"
+            >Woo Na Young</a
+          ><br /><br />
+          <a href="https://shinhye04.github.io/My-Website/" target="blank"
+            >Park Shin Hye</a
+          ><br /><br />
+          <a href="momo.github.io" target="blank">Park Zoo Young</a><br /><br />
+          <a href="https://www.instagram.com/_tjswjd__/?hl=ko" target="blank"
+            >Park Seon Jeong</a
+          ><br /><br />
+          <a href="https://m.blog.naver.com/dlwndgk" target="blank"
+            >Yee Jung Ha</a
+          >
+        </p>
+        <aside>
+          <a
+            href="https://www.instagram.com/p/Czq5Z4RLjVM/?hl=ko"
+            target="blank"
+            ><img src="free-icon-instagram-logo-1384886.jpg" /></a
+          ><br />
+          <br />
+          <br />
+          <a href="https://github.com/gogumahotteok" target="blank"
+            ><img src="github.jpg"
+          /></a>
+        </aside>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
